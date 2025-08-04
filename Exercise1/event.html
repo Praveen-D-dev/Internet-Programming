@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    header {
+        text-align: center;
+        margin-top: 50px;
+    }
+    main {
+        text-align: center;
+        margin-top: 100px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+    button {
+        width: 55%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<header><h2>Event Ticket Booking</h2></header><br><br>
+<main>
+<div style="text-align:center; margin-top:100px;">
+<form style="text-align:center; margin-top:100px;">
+<input type="text"id="decorate" placeholder="Enter your Name: "><br>
+<input type="email" id="decorate" placeholder="Enter your Email: "><br>
+<label>Select Event</label>
+<select>
+<option value="Concert">Concert</option>
+<option value="Seminar">Seminar</option>
+<option value="Sports">Sports</option>
+<option value="Marriage">Marriage</option>
+</select><br>
+<input type="number" id="decorate" placeholder="Enter the number of days for event: " min="1"><br><br>
+<button type="submit">Submit</button>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-top: 50px;
+        }
+        main {
+            text-align: center;
+            margin-top: 100px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+        }
+        button {
+            width: 55%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 10px 10px 5px rgba(0,0,0,0.1);
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+    </header>
+    <main>
+        <div style="text-align:center; margin-top:100px; padding: 25px;">
+            <form action="home.html">
+                <input type="text" id="decorate" placeholder="Name: " required><br><br>
+                
+                <input type="email" id="decorate" placeholder="Email: " required><br><br>
+                
+                <label for="movie-title">Select Movie:</label>
+                <select id="movie-title" required>
+                    <option value="Movie A">Movie A</option>
+                    <option value="Movie B">Movie B</option>
+                    <option value="Movie C">Movie C</option>
+                </select><br><br>
+                
+                <input type="number" id="Number of Tickets" placeholder="Number of tickets: " min="1" required><br><br>
+                
+                <button type="submit">Book Ticket</button>
+            </form>
+        </div>
+        <footer style="text-align:center; margin-top:50px;">
+            <p>&copy; 2023 Movie Ticket Booking</p>
+        </footer>
+    </main>
+</body>
+</html>
